@@ -1,5 +1,6 @@
 <template>
   <svg id="stories-personal-files" class="animated" style="user-select: auto;" version="1.1"
+       :style="$q.screen.lt.md ? 'width: 70vw' : 'width: 40vw'"
        viewBox="0 0 500 500"
        xmlns="http://www.w3.org/2000/svg">
     <g id="--background-complete--inject-10" class="animable"
@@ -821,10 +822,6 @@
 </template>
 
 <style scoped>
-
-svg {
-  width: 40vw;
-}
 
 svg#stories-personal-files:not(.animated) .animable {
   opacity: 0;

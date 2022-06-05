@@ -5,7 +5,7 @@
       outlined
       dense
       v-model="path"
-      style="width: 87%"
+      :style="$q.screen.lt.md ? 'width: 80%' : 'width: 87%'"
       label="FUll Path"
       v-on:keyup.enter="$emit('getFile', path)"
       placeholder="/path/to/file" />
@@ -14,7 +14,7 @@
       :loading="loading"
       label="view"
       @click="$emit('getFile', path)"
-      style="width: 10%"
+      :style="$q.screen.lt.md ? 'width: 17%' : 'width: 10%'"
       color="blue-grey"  />
   </div>
 

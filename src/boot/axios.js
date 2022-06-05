@@ -3,7 +3,7 @@ import axios from "axios";
 
 const local = 'http://127.0.0.1:8000/api/'
 const serve = 'http://143.198.169.92/api/'
-const url = local
+const url = serve
 
 const api = axios.create({ baseURL: url });
 

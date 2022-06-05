@@ -3,12 +3,13 @@
   <q-page class="container">
 
     <!--  Page Header  -->
-    <div class="text-h3 q-mt-xl">
+    <div class="text-h3 q-mt-xl"
+         :style="$q.screen.lt.md ? 'font-size: 2.1rem; margin-top: 30px' : ''">
       Log files Viewer.
     </div>
 
     <!--  Page Container  -->
-    <div class=" q-mt-xl text-center">
+    <div :class="!$q.screen.lt.md ? 'q-mt-xl' : 'q-mt-md' " class="  text-center">
 
       <!--  Action Form  -->
       <ActionBox @getFile="val =>{getLogFile(val); loadingBtn = true }" :loading="loadingBtn" />
