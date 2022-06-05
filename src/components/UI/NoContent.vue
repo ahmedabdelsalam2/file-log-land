@@ -820,7 +820,7 @@
   </svg>
 </template>
 
-<style>
+<style scoped>
 
 svg {
   width: 40vw;

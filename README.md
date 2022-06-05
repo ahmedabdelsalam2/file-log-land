@@ -1,6 +1,9 @@
-# file reader (file-log-land)
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="./public/img.svg" width="400"></a></p>
 
-File Reader
+# File reader powerd by ( Ahmed abd el salam )
+
+####  You can read almost any file except Microsoft family files.
+######## but make sure the file has read permission.
 
 ## Install the dependencies
 
@@ -14,16 +17,13 @@ npm install
 quasar dev
 ```
 
-### Lint the files
+### Don't forget to add your domain in src/boot/axios.js
+#### Now you can switch between local and serve url.
 
 ```bash
-npm run lint
-```
-
-### Format the files
-
-```bash
-npm run format
+const local = 'http://127.0.0.1:8000/api/'
+const serve = 'http://143.198.169.92/api/'
+const url = local
 ```
 
 ### Build the app for production
@@ -32,6 +32,10 @@ npm run format
 quasar build
 ```
 
-### Customize the configuration
+### After installing dependencies you can login with
 
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+```bash
+Username : admin
+Password : admin
+```
+

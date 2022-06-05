@@ -1,8 +1,10 @@
 <template>
+<!--<div>-->
 
-  <q-tooltip class="bg-black text-white">
+  <q-tooltip v-if="!$q.screen.lt.md" class="bg-black text-white">
     {{ text }}
   </q-tooltip>
+<!--</div>-->
 
 </template>
 
